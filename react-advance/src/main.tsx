@@ -6,7 +6,9 @@ import {
 } from "react-router-dom";
 import './index.css'
 import UseMemoDemo from './pages/usememo/UseMemo';
-import UseCallBack from './pages/usememo/UseCallBack';
+import UsecallBack from './pages/usecallback/UseCallBack';
+import HookForm from './pages/form/HookFrom';
+
 
 const router = createBrowserRouter([
   {
@@ -19,7 +21,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/usecallback",
-    element: <div><UseCallBack/></div>,
+    element: <div><UsecallBack/></div>,
+  },
+  {
+    path: "/form",
+    element: <div><HookForm/></div>,
   },
 ]);
 
