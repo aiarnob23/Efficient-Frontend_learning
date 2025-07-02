@@ -8,6 +8,8 @@ import './index.css'
 import UseMemoDemo from './pages/usememo/UseMemo';
 import UsecallBack from './pages/usecallback/UseCallBack';
 import HookForm from './pages/form/HookFrom';
+import UseEffectExample from './pages/useEffect/UseEffect';
+import InfiniteScrollingDemo from './pages/infinite-scrolling/InfiniteScrolling';
 
 
 const router = createBrowserRouter([
@@ -26,6 +28,14 @@ const router = createBrowserRouter([
   {
     path: "/form",
     element: <div><HookForm/></div>,
+  },
+  {
+    path: "/useeffect",
+    element: <div><UseEffectExample/></div>,
+  },
+  {
+    path: "/infinite-scrolling",
+    element: <div><InfiniteScrollingDemo/></div>,
   },
 ]);
 
