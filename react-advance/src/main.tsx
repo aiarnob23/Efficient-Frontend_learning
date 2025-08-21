@@ -10,6 +10,10 @@ import UsecallBack from './pages/usecallback/UseCallBack';
 import HookForm from './pages/form/HookFrom';
 import UseEffectExample from './pages/useEffect/UseEffect';
 import InfiniteScrollingDemo from './pages/infinite-scrolling/InfiniteScrolling';
+import ModalTesting from './pages/model-testing/ModalTesting';
+import Animation from './pages/animation/Animation';
+import Scroll1 from './pages/scroll/Scroll1';
+import GsapSvg from './pages/gsap-svg/GsapSvg';
 
 
 const router = createBrowserRouter([
@@ -36,6 +40,22 @@ const router = createBrowserRouter([
   {
     path: "/infinite-scrolling",
     element: <div><InfiniteScrollingDemo/></div>,
+  },
+  {
+    path: "/modal-testing",
+    element: <div><ModalTesting/></div>,
+  },
+  {
+    path: "/animation",
+    element: <div><Animation/></div>,
+  },
+  {
+    path: "/scroll1",
+    element: <div><Scroll1/></div>,
+  },
+  {
+    path: "/gsap-svg",
+    element: <div><GsapSvg/></div>,
   },
 ]);
 

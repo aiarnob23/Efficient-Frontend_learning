@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --color-brand-primary: #f6d383;
+}
+
+body {
+  font-family: "General Sans", sans-serif;
+  width: 100dvw;
+  background-color: #dfdff0;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .text-primary {
+    color: var(--color-brand-primary);
+  }
+  .text-blue-50{
+    color:#dfdff0;
+  }
+  .text-blue-100{
+    color:#f0f2fa;
+  }
+  .text-blue-200{
+    color:#010101;
+  }
+  .text-blue-300{
+    color:#4fb7dd;
+  }
+  .text-violet-300{
+    color:#5724ff;
+  }
+  .text-yellow-100{
+    color:#8e983f;
+  }
+  .text-yellow-300{
+    color:#edff66;
+  }
+    .mask-clip-path {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+}
+
+@layer base {
+  @font-face {
+    font-family: "circular-web";
+    src: url("/fonts/circluarweb-book.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "general";
+    src: url("/fonts/general.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "robert-medium";
+    src: url("/fonts/robert-medium.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "robert-regular";
+    src: url("/fonts/robert-regular") format("woff2");
+  }
+}
